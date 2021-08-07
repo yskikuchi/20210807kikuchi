@@ -1,0 +1,51 @@
+header{
+  display:flex;
+  justify-content: space-between;
+  color: rgb(20, 38, 121);
+  font-weight:bold;
+  height:50px;
+  margin:20px 20px;
+  font-size: 25px;
+}
+
+li{
+  list-style:none;
+  display:inline;
+  padding:0 10px;
+  font-size: 18px;
+}
+li a{
+  text-decoration: none;
+  color: rgb(20, 38, 121);
+}
+
+.main{
+  display:grid;
+  grid-template-rows: 300px 70px 100px 100px;
+  grid-template-columns: repeat(4,1fr);
+  margin:100px 0 15px 0;
+
+}
+.box1{
+  grid-row:2/3 ;
+  grid-column: 1/3;
+  font-size: 70px;
+}
+
+.box2{
+  grid-row: 1/4;
+  grid-column: 3/5;
+  z-index: 2;
+}
+.box2 img{
+  height:100%;
+  width:100%;
+  background-size: cover
+}
+
+.box3{
+grid-row: 3/5;
+grid-column: 1/4;
+background-color: rgb(12, 12, 104);
+z-index: 1;
+}
